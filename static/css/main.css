@@ -3,7 +3,7 @@
 }
 
 .split {
-  height: 100%;
+  height: 50%;
   width: 50%;
   position: fixed;
   z-index: 1;
@@ -50,4 +50,18 @@ textarea {
   text-decoration: underline;
   text-underline-position: under;
   cursor: pointer;
+}
+
+.image-box {
+  width: 80%; /* Adjust the width of the box as needed */
+  margin: 0 auto; /* Center the box horizontally within the left split */
+  border: 2px solid #ccc; /* Add a border around the box */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  overflow: hidden; /* Hide any content that overflows the box */
+}
+
+.image-box img {
+  width: 100%; /* Make the image fill the width of the image-box */
+  height: auto; /* Maintain the image aspect ratio */
+  display: block; /* Remove any extra spacing below the image */
 }
